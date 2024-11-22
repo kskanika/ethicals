@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethicals</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            perspective: 1000px;
+            scroll-behavior: smooth;
+            background-color: #121212;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #fffcfc;
+            position: relative;
+            transform-style: preserve-3d;
+            transform-origin: top;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Different backgrounds for each section */
+        .section1 {
+            background-color: #222121;
+        }
+
+        .section2 {
+            background-color: #201b1b;
+            flex-direction: column;
+        }
+
+        .section3 {
+            background-color: #252424;
+        }
+
+        .section4 {
+            background-color: #201b1b;
+        }
+
+        .section5 {
+            background-color: #252424;
+        }
+
+        /* Homepage Text Styling */
+        .homepage-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 5rem;
+            color: #fcf5f5;
+            text-shadow: 0 0 3px #444, 0 0 6px #333, 0 0 9px #222;
+            text-align: center;
+            animation: neon-glow 1.0s infinite alternate;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        @keyframes neon-glow {
+            0% {
+                text-shadow: 0 0 3px #eee9e9, 0 0 6px #837979, 0 0 9px #838181;
+            }
+            100% {
+                text-shadow: 0 0 6px #645d5d, 0 0 9px #706e6e, 0 0 12px #333;
+            }
+        }
+
+        /* Profile Card Styling */
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .profile-card {
+            width: 150px;
+            height: 150px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #fcfcfc;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .profile-desc {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* Toggle Menu Button */
+        .toggle-menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .toggle-menu span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #e4dede;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .menu {
+            position: fixed;
+            top: 60px;
+            left: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+            z-index: 999;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #fcf9f9;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            background-color: #464444;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .toggle-menu.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .toggle-menu.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .toggle-menu.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Toggle Button for Menu -->
+    <div class="toggle-menu" id="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Collapsible Menu -->
+    <div class="menu" id="menu">
+        <a href="#section1">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Research</a>
+        <a href="#section4">Blog</a>
+        <a href="#section5">Join Us</a>
+    </div>
+
+    <!-- Homepage Heading -->
+    <div class="homepage-heading">
+        Welcome to the ETHICALS!
+    </div>
+    
+
+    <!-- Sections -->
+    <div class="section section1" id="section1"></div>
+    <div class="section section2" id="section2">
+        ABOUT
+        <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
+            Ethicals is a forward-thinking initiative dedicated to addressing the challenges posed by deepfake technology and advancing ethical AI solutions.
+             Our mission is to develop accessible tools and educational resources that empower individuals and 
+             organizations to detect and mitigate the harmful effects of deepfakes. By promoting transparency,
+              digital literacy, and responsible AI practices, Ethicals aims to create a safer and more trustworthy 
+              digital landscape. We believe in the transformative power of technology when aligned with ethical 
+              principles and strive to foster innovation that benefits society while upholding integrity and privacy.
+        </p>
+        <br>
+        OUR TEAM
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-name">Kanika</div>
+                <div class="profile-desc">Researcher/Developer</div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-name">Bianca</div>
+                <div class="profile-desc">Researcher</div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-name">May</div>
+                <div class="profile-desc">Designer</div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-name">Emaan</div>
+                <div class="profile-desc">Writer/Researcher</div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-name">Abir</div>
+                <div class="profile-desc">Writer</div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-name">Alex</div>
+                <div class="profile-desc">Researcher</div>
+            </div>
+        </div>
+    </div>
+    <div class="section section3" id="section3">Research</div>
+    <div class="section section4" id="section4">Blog</div>
+    <div class="section section5" id="section5">Join Us</div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const toggleMenuBtn = document.getElementById('toggleMenu');
+        const menu = document.getElementById('menu');
+
+        // Toggle Menu
+        toggleMenuBtn.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            toggleMenuBtn.classList.toggle('open');
+        });
+
+        // Scroll Animation
+        window.addEventListener('scroll', () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="ethicals icon.png" type="image/png">   
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="ethicals icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -91,6 +91,8 @@
             text-shadow: 0 0 1px #444, 0 0 3px #333, 0 0 5px #222;
             text-align: center;
             animation: neon-glow 2.0s infinite alternate;
+            flex-direction: column;
+            height: 140vh; 
         }
         
         @keyframes section2 {
@@ -101,6 +103,33 @@
                 text-shadow: 0 0 6px #645d5d, 0 0 9px #706e6e, 0 0 12px #333;
             }
         }
+
+        #section3{
+
+        }
+
+        #section4{
+            flex-direction: column;
+            height: 240vh; 
+        }
+        .section4 img {
+        display: block;
+        width: 500px; 
+        height: 300px; 
+        margin: 20px auto; 
+        animation:  3s infinite ease-in-out; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px); /* Float up */
+        }
+    }
 
         /* Profile Card Styling */
         .profile-container {
@@ -229,7 +258,7 @@
         <span></span>
         <span></span>
         <span></span>
-    </div>
+    </div> 
 
     <!-- Collapsible Menu -->
     <div class="menu" id="menu">
@@ -239,9 +268,10 @@
         <a href="#section4">Blog</a>
         <a href="#section5">Join Us</a>
     </div>
+
     <!-- Homepage Heading -->
     <div class="homepage-heading">
-        <div class="heading-text">Welcome to <h3>ETHICALS!</h3>
+        <div class="heading-text">Welcome to<h3>ETHICALS!</h3>
         </div>
     </div>
     <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
@@ -249,7 +279,12 @@
     <!-- Sections -->
     <div class="section section1" id="section1"></div>
     <div class="section section2" id="section2">
-       <div class="About"> ABOUT
+        OUR MISSION
+        <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
+            Finding ethical solutions to the unethics. Spreading
+        </p>
+        <br>
+       <div class="About"> <img src="ethicals icon.png" alt="Background Icon" class="icon-background">ABOUT
         <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
             Ethicals is a forward-thinking initiative dedicated to addressing the challenges posed by deepfake technology and advancing ethical AI solutions.
              Our mission is to develop accessible tools and educational resources that empower individuals and 
@@ -288,8 +323,56 @@
         </div>
     </div>
 </div>
-    <div class="section section3" id="section3">Research</div>
-    <div class="section section4" id="section4">Blog</div>
+    <div class="section section3" id="section3"><img src="ethicals icon.png" alt="Background Icon" class="icon-background">Research</div>
+    <div class="section section4" id="section4">
+        <div class="section4">
+            CASE STUDY OF RASHMIKA MANDANNA
+            <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
+                The Rashmika Mandanna deepfake case became a significant incident showcasing the misuse of advanced AI technology. A deepfake video featuring her face superimposed on content originally uploaded by a British-Indian influencer went viral in late 2023. The creator, Eemani Naveen, aimed to increase
+                 the follower count on a Rashmika Mandanna fan page he managed. This tactic was initially successful, boosting followers from
+                 90,000 to 108,000 in just two weeks.
+However, the video sparked public outrage over privacy violations and the misuse of AI. 
+Following a complaint, the Delhi Police's cybercrime unit investigated the case and eventually arrested Naveen in January 2024. Legal action was taken under various sections of the Indian Penal Code and the IT Act for identity theft and privacy violation.
+ This case highlighted the urgent need for better regulations, public awareness,
+ and ethical AI practices to prevent such misuse.
+            </p>
+            <img src="Rashmika deepfaek.jpg" alt="Rashmika Mandanna Deepfake Case" class="floating-image">
+           <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;"><b> INSIGHTS AND SOLUTIONS:</b><br><br>
+         <b>  How It Was Used: <br></b><br>
+           <i> The deepfake was leveraged to create a realistic yet misleading portrayal of Rashmika, 
+            exploiting her celebrity status to gain attention online.</i>
+            <br>
+            <br>
+           <b> OVERCOMING THIS CHALLENGE:</b><br><br>
+
+<b>Technology Solutions:
+</b>
+<i>
+Develop advanced AI tools to detect and flag deepfakes.
+Utilize blockchain to verify the authenticity of media.
+</i><br><br>
+<b>
+Regulations:
+</b>
+<i>
+Enforce stricter legal penalties for creating and spreading deepfakes, as India's IT Act Section 66D provides up to three years imprisonment and a fine.
+<br></i><br>
+<b>
+Awareness:
+</b>
+<i>
+Educate the public about the existence and risks of deepfakes.
+Promote media literacy to help individuals identify potential manipulations.
+Platform Responsibility:</i>
+
+Encouragement social media platforms to employ better content moderation and algorithms to counter deepfake content.
+           </p>
+           <h3 style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">Sources:</h3> <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
+            <a href="https://www.indiatoday.in/india/story/rashmika-mandanna-deepfake-video-accused-arrested-andra-engineer-wanted-to-boost-followers-2491386-2024-01-20">India Today</a>
+            <br> <a href="https://www.hindustantimes.com/india-news/main-accused-in-rashmika-mandanna-deepfake-case-arrested-delhi-police-101705740719655.html">Hindustan Times</a>
+            </p>
+        </div>
+    </div>
     <div class="section section5" id="section5">Join Us</div>
 
     <script>
@@ -316,5 +399,3 @@
         });
     </script>
 </body>
-</html>
-

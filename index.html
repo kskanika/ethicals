@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <link rel="icon" href="ethicals icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethicals</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <style>
+        
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
             perspective: 1000px;
             scroll-behavior: smooth;
             background-color: #121212;
@@ -69,13 +75,27 @@
             color: #fcf5f5;
             text-shadow: 0 0 3px #444, 0 0 6px #333, 0 0 9px #222;
             text-align: center;
-            animation: neon-glow 1.0s infinite alternate;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation: neon-glow 1.0s infinite alternate; 
         }
 
         @keyframes neon-glow {
             0% {
                 text-shadow: 0 0 3px #eee9e9, 0 0 6px #837979, 0 0 9px #838181;
+            }
+            100% {
+                text-shadow: 0 0 6px #645d5d, 0 0 9px #706e6e, 0 0 12px #333;
+            }
+        }
+        #section2 {
+            color: #cecbcb;
+            text-shadow: 0 0 1px #444, 0 0 3px #333, 0 0 5px #222;
+            text-align: center;
+            animation: neon-glow 2.0s infinite alternate;
+        }
+        
+        @keyframes section2 {
+            0% {
+                text-shadow: 0 0 1px #eee9e9, 0 0 2px #837979, 0 0 3px #838181;
             }
             100% {
                 text-shadow: 0 0 6px #645d5d, 0 0 9px #706e6e, 0 0 12px #333;
@@ -181,6 +201,26 @@
         .toggle-menu.open span:nth-child(3) {
             transform: rotate(-45deg) translate(5px, -5px);
         }
+        .icon-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 400px;
+            height: 400px;
+            opacity: 0.2;
+            animation: rotate 10s infinite linear;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,14 +242,15 @@
 
     <!-- Homepage Heading -->
     <div class="homepage-heading">
-        Welcome to the ETHICALS!
+        <div class="heading-text">Welcome to <h3>ETHICALS!</h3>
+        </div>
     </div>
-    
+    <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
 
     <!-- Sections -->
     <div class="section section1" id="section1"></div>
     <div class="section section2" id="section2">
-        ABOUT
+       <div class="About"> ABOUT
         <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
             Ethicals is a forward-thinking initiative dedicated to addressing the challenges posed by deepfake technology and advancing ethical AI solutions.
              Our mission is to develop accessible tools and educational resources that empower individuals and 
@@ -247,6 +288,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="section section3" id="section3">Research</div>
     <div class="section section4" id="section4">Blog</div>
     <div class="section section5" id="section5">Join Us</div>

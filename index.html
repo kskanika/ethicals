@@ -116,13 +116,61 @@
             }
         }
 
-        #section3{
+       /* General Section Styling */
+.section3 {
+    background-color: #121212;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ccc;
+}
 
-        }
+/* Research Container Styling */
+.research-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Icon Background */
+.icon-background {
+    display: block;
+    margin: 0 auto;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Additional Styling for Content Sections */
+.research-content {
+    margin-bottom: 40px;
+}
+
 
         #section4{
             flex-direction: column;
-            height: 240vh; 
+            height: 340vh; 
         }
         .section4 img {
         display: block;
@@ -230,6 +278,19 @@
             background-color: #464444;
             border-radius: 5px;
         }
+        .linkdecor a{
+            display: block;
+            padding: 10px 20px;
+            color: #fcf9f9;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            background-color: #464444;
+            border-radius: 5px;
+        }
+        .linkdecor a:hover{
+            background-color: #201b1b;
+        }
 
         .menu a:hover {
             background-color: #555;
@@ -244,11 +305,7 @@
 
     }
 
-    a{      
-      text-decoration: none;
-      color: grey;
-
-    }
+   
 
     label{
       text-align: left-aligned;
@@ -318,6 +375,34 @@
                 transform: translate(-50%, -50%) rotate(360deg);
             }
         }
+        .read-more-hidden {
+    display: none;
+}
+
+.read-more-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #555;
+}
+ul, ol{
+			text-align: justify;
+			color: #ccc; 
+			margin: 20px auto;
+			margin-left: 150px;
+			margin-right: 150px;
+
+		}
+
     </style>
 </head>
 <body>
@@ -339,7 +424,7 @@
 
     <!-- Homepage Heading -->
     <div class="homepage-heading">
-        <div class="heading-text">Welcome to<h3>ETHICALS!</h3>
+        <div class="heading-text"><h3>WELCOME TO</h3><h1>ETHICALS!</h1>
         </div>
     </div>
     <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
@@ -390,67 +475,104 @@
         </div>
     </div>
 </div>
-    <div class="section section3" id="section3"><img src="ethicals icon.png" alt="Background Icon" class="icon-background">Research</div>
-    <div class="section section4" id="section4">
-        <div class="section4">
-            CASE STUDY OF RASHMIKA MANDANNA
-            <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
-            <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
-                The Rashmika Mandanna deepfake case became a significant incident showcasing the misuse of advanced AI technology. A deepfake video featuring her face superimposed on content originally uploaded by a British-Indian influencer went viral in late 2023. The creator, Eemani Naveen, aimed to increase
-                 the follower count on a Rashmika Mandanna fan page he managed. This tactic was initially successful, boosting followers from
-                 90,000 to 108,000 in just two weeks.
-However, the video sparked public outrage over privacy violations and the misuse of AI. 
-Following a complaint, the Delhi Police's cybercrime unit investigated the case and eventually arrested Naveen in January 2024. Legal action was taken under various sections of the Indian Penal Code and the IT Act for identity theft and privacy violation.
- This case highlighted the urgent need for better regulations, public awareness,
- and ethical AI practices to prevent such misuse.
-            </p>
-            <img src="Rashmika deepfaek.jpg" alt="Rashmika Mandanna Deepfake Case" class="floating-image">
-           <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;"><b> INSIGHTS AND SOLUTIONS:</b><br><br>
-         <b>  How It Was Used: <br></b><br>
-           <i> The deepfake was leveraged to create a realistic yet misleading portrayal of Rashmika, 
-            exploiting her celebrity status to gain attention online.</i>
-            <br>
-            <br>
-           <b> OVERCOMING THIS CHALLENGE:</b><br><br>
+<div class="section section3" id="section3">
+    <div class="research-container">
+        <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
+        <h2>Research</h2>
 
-<b>Technology Solutions:
-</b>
-<i>
-Develop advanced AI tools to detect and flag deepfakes.
-Utilize blockchain to verify the authenticity of media.
-</i><br><br>
-<b>
-Regulations:
-</b>
-<i>
-Enforce stricter legal penalties for creating and spreading deepfakes, as India's IT Act Section 66D provides up to three years imprisonment and a fine.
-<br></i><br>
-<b>
-Awareness:
-</b>
-<i>
-Educate the public about the existence and risks of deepfakes.
-Promote media literacy to help individuals identify potential manipulations.
-Platform Responsibility:</i>
-
-Encouragement social media platforms to employ better content moderation and algorithms to counter deepfake content.
-           </p>
-           <div class="decor">
-           <h3 style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">Sources:</h3> <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
-            <a href="https://www.indiatoday.in/india/story/rashmika-mandanna-deepfake-video-accused-arrested-andra-engineer-wanted-to-boost-followers-2491386-2024-01-20">India Today</a>
-            <br> <a href="https://www.hindustantimes.com/india-news/main-accused-in-rashmika-mandanna-deepfake-case-arrested-delhi-police-101705740719655.html">Hindustan Times</a>
+        <div class="research-content">
+            <h3>What is a Deepfake?</h3>
+            <p>
+                A deepfake is a type of synthetic media where artificial intelligence (AI) techniques, especially deep learning, 
+                are used to create realistic fake content. Typically, this involves swapping faces in videos, altering voices, 
+                or fabricating scenes that appear authentic. By using neural networks to learn and replicate facial expressions, 
+                voice patterns, and even body movements, deepfake technology can produce highly convincing, yet completely 
+                false, images, videos, or audio recordings.
             </p>
-           </div>
-            <hr>
-            <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
-                People can be seriously harmed by non-consensual deepfake videos that use and manipulate their likenesses for offensive or harmful content. Serious consequences may result from this, such as diminished career prospects, public humiliation, or strained interpersonal ties.
-There are several malicious uses of this technology - in videos and audios - and have been used to contreversialise several public figures. With the use of AI softwares, like the tool midjourney, several generated pictures of large political figures have been made, like controversial pictures of Joe Biden and Trump. 
-However, deepfake technology can also be used positively and has been used in the entertainment industry to improve the outcomes of their actor's performances. 
-Some examples are:
-Martin Scorsese’s “The Irishman”: An example of using deepfake technology to de-age actors.
-Star Wars: Rogue One: AI was used to produce the deceased actor Peter Cushing’s character, Grand Moff Wilhuff Tarkin.
-Roadrunner: In this Anthony Bourdain biopic, audio deepfake tech (voice cloning) was used to synthesize his voice.
         </div>
+
+        <div class="research-content">
+            <h3>Uses</h3>
+            <p>
+                Deepfakes have been used in entertainment and visual effects, but they also raise ethical concerns. They can 
+                be easily misused for misinformation, harassment, or manipulating public perception, making it a significant 
+                challenge in the fields of ethics, security, and AI regulation.
+            </p>
+            <div class="linkdecor">
+         <hr><h2>Read More: <br></h2><h3> <a href="https://docs.google.com/document/d/1OsZdsz_E-8SeJ4WUo5SWC4jRwLMAMRZfTzMFTz1F-bg/edit?usp=sharing">Research Page</a>  </h3>
+         <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body style="background-color: black; color: #ccc; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0;">
+    <div class="section section4" id="section4">
+        <h2>CASE STUDY OF RASHMIKA MANDANNA</h2>
+        <img src="ethicals icon.png" alt="Background Icon" class="icon-background" style="width: 100px; margin: 20px 0;">
+
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            <div class="read-more-container" style="text-align: justify;">
+             <center>   <p class="read-more-text" style="margin: 0;">
+                    The Rashmika Mandanna deepfake case became a significant incident showcasing the misuse of advanced AI technology.
+                    <br> A deepfake video featuring her face superimposed on content originally uploaded by a British-Indian influencer went viral in late 2023. <br>
+                    The creator, Eemani Naveen, aimed to increase the follower count on a Rashmika Mandanna fan page he managed. 
+                    <br>
+                    This tactic was initially successful, boosting followers from 90,000 to 108,000 in just two weeks. 
+                    <span class="read-more-hidden" style="display: none;">
+                        However, the video sparked public outrage over privacy violations and the misuse of AI. <br>
+                        Following a complaint, the Delhi Police's cybercrime unit investigated the case and eventually arrested Naveen in January 2024. 
+                        <br>Legal action was taken under various sections of the Indian Penal Code and the IT Act for identity theft and privacy violation. This case highlighted the urgent need for better regulations, public awareness, and ethical AI practices to prevent such misuse.
+                    </span>
+                </p></center>
+                <button class="read-more-button" style="background-color: transparent; border: 1px solid #ccc; color: #ccc; padding: 5px 10px; font-size: 1rem; margin: 10px 0;">Read More</button>
+            </div>
+        </p>
+
+        <img src="Rashmika deepfaek.jpg" alt="Rashmika Mandanna Deepfake Case" class="floating-image" style="width: 300px; margin: 20px auto; display: block;">
+
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            <b>INSIGHTS AND SOLUTIONS:</b><br><br>
+            <b>How It Was Used:</b><br><br>
+            <i>The deepfake was leveraged to create a realistic yet misleading portrayal of Rashmika, exploiting her celebrity status to gain attention online.</i>
+        </p>
+
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            <b>OVERCOMING THIS CHALLENGE:</b><br><br>
+            <b>Technology Solutions:</b><br>
+            <i>Develop advanced AI tools to detect and flag deepfakes. Utilize blockchain to verify the authenticity of media.</i><br><br>
+            <b>Regulations:</b><br>
+            <i>Enforce stricter legal penalties for creating and spreading deepfakes, as India's IT Act Section 66D provides up to three years imprisonment and a fine.</i><br><br>
+            <b>Awareness:</b><br>
+            <i>Educate the public about the existence and risks of deepfakes. Promote media literacy to help individuals identify potential manipulations. Encourage social media platforms to employ better content moderation and algorithms to counter deepfake content.</i>
+        </p>
+
+        <div style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            <h3>Sources:</h3>
+            <p>
+                <a href="https://www.indiatoday.in/india/story/rashmika-mandanna-deepfake-video-accused-arrested-andra-engineer-wanted-to-boost-followers-2491386-2024-01-20" style="color: #ccc; text-decoration: underline;">India Today</a><br>
+                <a href="https://www.hindustantimes.com/india-news/main-accused-in-rashmika-mandanna-deepfake-case-arrested-delhi-police-101705740719655.html" style="color: #ccc; text-decoration: underline;">Hindustan Times</a>
+            </p>
+        </div>
+        
+        <hr style="border: 1px solid #ccc; width: 80%; margin: 20px auto;">
+
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            People can be seriously harmed by non-consensual deepfake videos that use and manipulate their likenesses for offensive or harmful content. Serious consequences may result from this, such as diminished career prospects, public humiliation, or strained interpersonal ties. There are several malicious uses of this technology - in videos and audios - and it has been used to controversialize several public figures. With the use of AI software, like the tool MidJourney, several generated pictures of large political figures have been made, like controversial pictures of Joe Biden and Trump.
+        </p>
+        
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
+            However, deepfake technology can also be used positively and has been used in the entertainment industry to improve the outcomes of their actor's performances. Some examples are:
+        </p>
+        
+        <ul style="max-width: 800px; margin: 20px auto; font-size: 1.2rem; text-align: left;">
+            <li><b>Martin Scorsese’s “The Irishman”:</b> An example of using deepfake technology to de-age actors.</li>
+            <br>
+            <li><b>Star Wars: Rogue One:</b> AI was used to produce the deceased actor Peter Cushing’s character, Grand Moff Wilhuff Tarkin.</li>
+            <br>
+            <li><b>Roadrunner:</b> In this Anthony Bourdain biopic, audio deepfake tech (voice cloning) was used to synthesize his voice.</li>
+            <br>
+        </ul>
     </div>
     <div class="section section5" id="section5">
         <h1>Ethicals | Join Us</h1>
@@ -506,5 +628,23 @@ Roadrunner: In this Anthony Bourdain biopic, audio deepfake tech (voice cloning)
                 }
             });
         });
+        document.addEventListener('DOMContentLoaded', () => {
+    const readMoreButton = document.querySelector('.read-more-button');
+    const hiddenText = document.querySelector('.read-more-hidden');
+
+    readMoreButton.addEventListener('click', () => {
+        if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+            hiddenText.style.display = 'inline';
+            readMoreButton.textContent = 'Read Less';
+        } else {
+            hiddenText.style.display = 'none';
+            readMoreButton.textContent = 'Read More';
+        }
+        
+    });
+});
+
+
     </script>
 </body>
+</html>

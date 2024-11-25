@@ -22,6 +22,18 @@
             background-color: #121212;
         }
 
+        .decor a {
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Optional: Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.decor a:hover {
+    color: #ccc; /* Optional: Change color slightly on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
         .section {
             height: 100vh;
             display: flex;
@@ -121,6 +133,10 @@
         border-radius: 10px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     }
+    #section5{
+            flex-direction: column;
+            height: 100vh; 
+        }
 
     @keyframes float {
         0%, 100% {
@@ -218,7 +234,59 @@
         .menu a:hover {
             background-color: #555;
         }
+        
+    #abt{
+      width: 500px;
+      margin-left: 330px;
+      font-family: georgia;
+      text-decoration: none;
+      height: 30%;
 
+    }
+
+    a{      
+      text-decoration: none;
+      color: grey;
+
+    }
+
+    label{
+      text-align: left-aligned;
+      color: black;
+      font-size: 25px;
+    }
+
+    input[type=text], textarea {
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical 
+    }
+
+    input[type=submit] {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: grey;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: rgb(43, 36, 36);
+      padding: 20px;
+      width: 70%;
+      margin-left: 13%;
+    }
         .toggle-menu.open span:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
         }
@@ -264,7 +332,7 @@
     <div class="menu" id="menu">
         <a href="#section1">Home</a>
         <a href="#section2">About</a>
-        <a href="#section3">Research</a>
+        <a href="section3">Research</a>
         <a href="#section4">Blog</a>
         <a href="#section5">Join Us</a>
     </div>
@@ -275,7 +343,6 @@
         </div>
     </div>
     <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
-
     <!-- Sections -->
     <div class="section section1" id="section1"></div>
     <div class="section section2" id="section2">
@@ -310,11 +377,11 @@
             </div>
             <div class="profile-card">
                 <div class="profile-name">Emaan</div>
-                <div class="profile-desc">Organizer/Researcher</div>
+                <div class="profile-desc">Writer/Researcher</div>
             </div>
             <div class="profile-card">
                 <div class="profile-name">Abir</div>
-                <div class="profile-desc">Writer</div>
+                <div class="profile-desc">Writer/Researcher</div>
             </div>
             <div class="profile-card">
                 <div class="profile-name">Alex</div>
@@ -323,12 +390,11 @@
         </div>
     </div>
 </div>
-    <div class="section section3" id="section3"><img src="ethicals icon.png" alt="Background Icon" class="icon-background">Research: <br>
-    <center><a href="https://docs.google.com/document/d/1OsZdsz_E-8SeJ4WUo5SWC4jRwLMAMRZfTzMFTz1F-bg/edit?usp=sharing"> DEEPFAKE RESEARCH </a></center>
-    </div>
+    <div class="section section3" id="section3"><img src="ethicals icon.png" alt="Background Icon" class="icon-background">Research</div>
     <div class="section section4" id="section4">
         <div class="section4">
             CASE STUDY OF RASHMIKA MANDANNA
+            <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
             <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
                 The Rashmika Mandanna deepfake case became a significant incident showcasing the misuse of advanced AI technology. A deepfake video featuring her face superimposed on content originally uploaded by a British-Indian influencer went viral in late 2023. The creator, Eemani Naveen, aimed to increase
                  the follower count on a Rashmika Mandanna fan page he managed. This tactic was initially successful, boosting followers from
@@ -369,10 +435,12 @@ Platform Responsibility:</i>
 
 Encouragement social media platforms to employ better content moderation and algorithms to counter deepfake content.
            </p>
+           <div class="decor">
            <h3 style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">Sources:</h3> <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
             <a href="https://www.indiatoday.in/india/story/rashmika-mandanna-deepfake-video-accused-arrested-andra-engineer-wanted-to-boost-followers-2491386-2024-01-20">India Today</a>
             <br> <a href="https://www.hindustantimes.com/india-news/main-accused-in-rashmika-mandanna-deepfake-case-arrested-delhi-police-101705740719655.html">Hindustan Times</a>
             </p>
+           </div>
             <hr>
             <p style="max-width: 800px; color: #ccc; font-size: 1.2rem; margin: 20px auto; text-align: center;">
                 People can be seriously harmed by non-consensual deepfake videos that use and manipulate their likenesses for offensive or harmful content. Serious consequences may result from this, such as diminished career prospects, public humiliation, or strained interpersonal ties.
@@ -384,7 +452,37 @@ Star Wars: Rogue One: AI was used to produce the deceased actor Peter Cushing’
 Roadrunner: In this Anthony Bourdain biopic, audio deepfake tech (voice cloning) was used to synthesize his voice.
         </div>
     </div>
-    <div class="section section5" id="section5">Join Us</div>
+    <div class="section section5" id="section5">
+        <h1>Ethicals | Join Us</h1>
+        <h2>Contact Form</h2>
+    
+      </div>
+    
+    
+      <div class="container">
+        <form>
+    
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name ...">
+    
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name ...">
+    
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Your country ...">
+    
+            <label for="com">Comment:</label>
+            <textarea id="com" name="subject" placeholder="What are your thoughts ..." style="height:200px"></textarea>
+    
+            <input type="submit" value="Submit">
+    
+        </form>
+        <div id="abt">
+            <p>Our team is on <a href="https://joinlaunchpad.com/#/projects/5139/ethicals">Launch Pad</a>. Click to review.</p>
+          </div>
+      </div>
+    
+    </div>
 
     <script>
         const sections = document.querySelectorAll('.section');
@@ -410,4 +508,3 @@ Roadrunner: In this Anthony Bourdain biopic, audio deepfake tech (voice cloning)
         });
     </script>
 </body>
-</html>

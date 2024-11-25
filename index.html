@@ -167,10 +167,14 @@ p {
     margin-bottom: 40px;
 }
 
+#section3{
+    flex-direction: column;
+            height: 140vh; 
+}
 
         #section4{
             flex-direction: column;
-            height: 340vh; 
+            height: 360vh; 
         }
         .section4 img {
         display: block;
@@ -182,6 +186,10 @@ p {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     }
     #section5{
+        color: #cecbcb;
+            text-shadow: 0 0 1px #444, 0 0 3px #333, 0 0 5px #222;
+            text-align: center;
+            animation: neon-glow 2.0s infinite alternate;
             flex-direction: column;
             height: 100vh; 
         }
@@ -402,6 +410,13 @@ ul, ol{
 			margin-right: 150px;
 
 		}
+        input[type="submit"]:active {
+        background-color: #d3d3d3; 
+    }
+
+    .container{
+        background-color: #3a3737;
+    }
 
     </style>
 </head>
@@ -530,7 +545,8 @@ ul, ol{
         </p>
 
         <img src="Rashmika deepfaek.jpg" alt="Rashmika Mandanna Deepfake Case" class="floating-image" style="width: 300px; margin: 20px auto; display: block;">
-
+       
+       
         <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
             <b>INSIGHTS AND SOLUTIONS:</b><br><br>
             <b>How It Was Used:</b><br><br>
@@ -556,7 +572,7 @@ ul, ol{
         </div>
         
         <hr style="border: 1px solid #ccc; width: 80%; margin: 20px auto;">
-
+        
         <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem;">
             People can be seriously harmed by non-consensual deepfake videos that use and manipulate their likenesses for offensive or harmful content. Serious consequences may result from this, such as diminished career prospects, public humiliation, or strained interpersonal ties. There are several malicious uses of this technology - in videos and audios - and it has been used to controversialize several public figures. With the use of AI software, like the tool MidJourney, several generated pictures of large political figures have been made, like controversial pictures of Joe Biden and Trump.
         </p>
@@ -574,38 +590,38 @@ ul, ol{
             <br>
         </ul>
     </div>
-    <div class="section section5" id="section5">
-        <h1>Ethicals | Join Us</h1>
-        <h2>Contact Form</h2>
-    
-      </div>
-    
-    
-      <div class="container">
-        <form>
-    
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name ...">
-    
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name ...">
-    
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country" placeholder="Your country ...">
-    
-            <label for="com">Comment:</label>
-            <textarea id="com" name="subject" placeholder="What are your thoughts ..." style="height:200px"></textarea>
-    
-            <input type="submit" value="Submit">
-    
-        </form>
-        <div id="abt">
-            <p>Our team is on <a href="https://joinlaunchpad.com/#/projects/5139/ethicals">Launch Pad</a>. Click to review.</p>
-          </div>
-      </div>
-    
+
+    <div class="section section5" id="section5" style="text-align: center; padding: 50px; background-color: #121212; color: #fdfdfd;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px; font-family: 'Times New Roman';">ETHICALS | JOIN US</h1>
+        <img src="ethicals icon.png" alt="Background Icon" class="icon-background">
     </div>
 
+        <div class="container" style="width: 60%; margin: 0 auto; padding: 20px; background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; font-family: Times New Roman;">CONTACT FORM</h>
+            <br>
+            <br>
+            <form>
+                <label for="fname" style="color: #ccc;font-family: Times New Roman;">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name ..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #444; background-color: #333; color: #ccc;">
+    
+                <label for="lname" style="color: #ccc; font-family: Times New Roman;">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name ..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #444; background-color: #333; color: #ccc;">
+    
+                <label for="country" style="color: #ccc; font-family: Times New Roman;">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Your country ..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #444; background-color: #333; color: #ccc;">
+    
+                <label for="com" style="color: #ccc; font-family: Times New Roman;">Comment:</label>
+                <textarea id="com" name="subject" placeholder="What are your thoughts ..." style="width: 100%; height: 200px; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #444; background-color: #333; color: #ccc;"></textarea>
+    
+                <input type="submit" value="Submit" 
+    style="width: 100%; padding: 10px; margin-top: 20px; border-radius: 5px; background-color: #111111; font-family: 'Times New Roman'; color: #fff;border: none; cursor: pointer;">
+
+    
+            <div id="abt" style="margin-top: 30px; text-align: center;">
+                <p style="color: #ccc;">Our team is on <a href="https://joinlaunchpad.com/#/projects/5139/ethicals" style="color: #007BFF; text-decoration: none;">Launch Pad</a>. Click to review.</p>
+            </div>
+        </div>
+    </div>
     <script>
         const sections = document.querySelectorAll('.section');
         const toggleMenuBtn = document.getElementById('toggleMenu');
